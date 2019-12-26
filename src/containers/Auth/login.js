@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import style from '../style/login.style';
+import style from './style/login.style';
 
 export default class LoginScreen extends PureComponent<> {
   constructor(props) {

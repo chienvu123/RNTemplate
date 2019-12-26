@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import style from '../style/register.style';
+import style from './style/register.style';
 
 export default class RegisterScreen extends PureComponent<> {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class RegisterScreen extends PureComponent<> {
           onPress={() => {
             navigation.goBack();
           }}>
-          <Text style={{color: 'blue'}}>Back to login</Text>
+          <Text>Back to login</Text>
         </TouchableOpacity>
       </View>
     );

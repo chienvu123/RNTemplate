@@ -1,11 +1,11 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from 'containers/Home';
-import DetailScreen from 'containers/DetailScreen';
+import NewsDetail from 'containers/Home/newsDetail';
 
 const HomeStack = createStackNavigator(
   {
     HomeScreen,
-    DetailScreen,
+    NewsDetail,
   },
   {
     headerMode: 'none',

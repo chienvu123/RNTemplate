@@ -1,8 +1,10 @@
 import {PermissionsAndroid, Platform, Alert} from 'react-native';
-import apis from 'apis';
+import apis from 'services/apis';
 import * as types from '../reduxType';
 
 class Instance {
+  accessToken = '';
+  user = {};
   setUser = data => async dispatch => {
     const test = await apis.create().User.getUserById();
     dispatch({
@@ -21,7 +23,6 @@ class Instance {
       latitude: number,
     }) => void = () => {},
   ) => {
-    // eslint-disable-next-line
     navigator.geolocation.getCurrentPosition(
       position => {
         const {coords} = position;
@@ -55,7 +56,8 @@ class Instance {
                     }
                   },
                   err => {
-                    if (isShowError) {
+                    console.log(err);
+                    if (isShowError && err) {
                       Alert.alert(
                         'Thông báo',
                         'Bạn cần cấp quyền truy cập vị trí để sử dụng chức năng này',

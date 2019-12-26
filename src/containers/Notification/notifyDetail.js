@@ -21,7 +21,7 @@ class HomeScreen extends PureComponent<> {
   changeUserInfo = async () => {
     if (this.userName) {
       this.props.setUser({name: this.userName}); // test redux
-      this.props.navigation.navigate('NewsDetail');
+      this.props.navigation.navigate('DetailScreen');
     } else {
       Alert.alert('Warning', 'you must fill name');
     }

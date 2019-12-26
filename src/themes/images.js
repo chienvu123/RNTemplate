@@ -1,7 +1,6 @@
 // leave off @2x/@3x
-/* eslint-disable */
 const images = {
-  // background: require("assets/images/background.png"),
+  background: require('assets/auth/download.jpg'),
 };
 export default images;
 

@@ -9,6 +9,7 @@ const AuthStack = createStackNavigator(
   },
   {
     headerMode: 'none',
+    mode: 'modal',
   },
 );
 

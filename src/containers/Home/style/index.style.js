@@ -7,6 +7,13 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#FFF',
   },
+  input: {
+    width: '90%',
+    height: 36,
+  },
+  title: {
+    color: 'blue',
+  },
 });
 
 export default style;

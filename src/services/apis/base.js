@@ -1,3 +1,5 @@
+import UserModel from 'reduxes/actions/user';
+
 export const convertParamsToForm = (params: Object): FormData => {
   const form = new FormData();
   try {
@@ -41,7 +43,7 @@ export const request = async (
     const headers = {
       Accept: '*/*',
       'Content-Type': 'application/json; charset=utf-8',
-      // Authorization: `Bearer ${UserModel.token}`,
+      Authorization: `Bearer ${UserModel.accessToken}`,
       ...tmpHeader,
     };
     const rs = await fetch(url, {
