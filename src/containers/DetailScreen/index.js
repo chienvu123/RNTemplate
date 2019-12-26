@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import _ from 'lodash';
 import {connect} from 'react-redux';
 import style from './style/index.style';
 
