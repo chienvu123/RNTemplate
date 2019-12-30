@@ -76,10 +76,8 @@ type Props = {
   rightButton?: any,
   leftStyle: Object,
   rightStyle: Object,
-  onCenterPress?: () => void,
   headerStyle?: ViewStyle,
   leftButton?: any,
-  onChangeText?: (text: string) => void,
   titleStyle?: Object,
   rightText: any,
 };
@@ -93,9 +91,7 @@ export default class Header extends PureComponent<Props> {
     rightButton: null,
     leftButton: icons.backBlack,
     onRightPress: () => {},
-    onCenterPress: () => {},
     headerStyle: {},
-    onChangeText: () => {},
     titleStyle: {},
   };
   focusInput = () => {
