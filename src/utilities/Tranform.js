@@ -1,12 +1,12 @@
 import {Dimensions, Platform} from 'react-native';
-import {isIphoneX, isTaiTho} from './device';
+import {isTaiTho} from './device';
 
 const base = {
   width: 360,
   height: 640,
 };
 
-const iOSStatusBarHeight = isIphoneX() === true ? 44 : 20;
+const iOSStatusBarHeight = isTaiTho() === true ? 44 : 20;
 const statusBarHeight = Platform.OS === 'ios' ? iOSStatusBarHeight : 22;
 const navBarHeight =
   Platform.OS === 'ios' ? 44 + statusBarHeight : 35 + statusBarHeight;
